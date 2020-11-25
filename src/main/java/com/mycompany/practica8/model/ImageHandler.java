@@ -33,15 +33,11 @@ import javax.swing.JLabel;
     public static Dimension openImage(File fichero, Boolean resize, Lienzo lienzo){
         try{
             BufferedImage image= ImageIO.read(fichero);
-            System.out.println(image.getWidth());
-            System.out.println(image.getHeight());
             BufferedImage aux;
             if(resize){
                aux=checkSize(image);
                image=aux;
             }
-            System.out.println(image.getWidth());
-             System.out.println(image.getHeight());
             if(dim==null){
             dim= new Dimension(image.getWidth(),image.getHeight());
             }
