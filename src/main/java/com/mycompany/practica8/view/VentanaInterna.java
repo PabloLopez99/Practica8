@@ -13,12 +13,8 @@ import java.awt.Dimension;
  */
 public class VentanaInterna extends javax.swing.JInternalFrame {
 
-    /**
-     * Creates new form VentanaInterna
-     */
     public VentanaInterna() {
         initComponents();
-     //   this.setPreferredSize(new Dimension(lienzo1.getImage().getWidth(),lienzo1.getImage().getHeight()));
         this.setMaximizable(true);
         this.setIconifiable(true);
         this.setClosable(true);
