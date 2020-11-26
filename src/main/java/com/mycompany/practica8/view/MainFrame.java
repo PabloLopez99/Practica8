@@ -225,6 +225,7 @@ public class MainFrame extends javax.swing.JFrame {
                         escritorio.add(vInterna);        
                         Dimension dimension= ImageHandler.applyThreshold(fichero,num,resize,vInterna.getLienzo());
                         vInterna.setSize(dimension);
+                        vInterna.setLocation(ventana.getX()+20, ventana.getY()+20);
                         vInterna.setVisible(true);
                     } catch (IOException ex) {
                         Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
@@ -243,11 +244,11 @@ public class MainFrame extends javax.swing.JFrame {
            openImageMenu.setText("Abrir imagen");
            saveImageMenu.setText("Guardar imagen");
            editMenu.setText("Editar");
-           applyThresholdMenu.setText("Apply Threshold");
+           applyThresholdMenu.setText("Umbralización");
            helpMenu.setText("Ayuda");
            languageMenu.setText("Idioma");
            spanishMenu.setText("Español");
-           englishMenu.setText("Inglés"); 
+           englishMenu.setText("English"); 
            infoDialogMessage="En el menú Archivo podrá abrir o guardar una imagen\n"
                            + "En el menú Editar podrá aplicar el umbralizado\n"
                            + "En el menú Ajustes podrá cambiar el idioma de la aplicación\n"
@@ -265,7 +266,7 @@ public class MainFrame extends javax.swing.JFrame {
             applyThresholdMenu.setText("Aplicar Umbralizado");
             helpMenu.setText("Help");
             languageMenu.setText("Language");
-            spanishMenu.setText("Spanish");
+            spanishMenu.setText("Español");
             englishMenu.setText("English");    
             infoDialogMessage="Use the File menu to open and save an image\n"
                            + "Use the Edit menu to apply the threshold\n"
